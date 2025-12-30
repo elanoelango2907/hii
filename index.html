@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For My Love</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+margin:0;
+background:#000;
+color:white;
+font-family: 'Poppins', sans-serif;
+text-align:center;
+overflow:hidden;
+}
+.page{display:none; padding:25px;}
+h1{font-size:28px;}
+button{
+padding:12px 25px;
+border:none;
+border-radius:25px;
+color:white;
+font-size:18px;
+margin-top:20px;
+}
+
+.redHeart{font-size:90px; color:red;}
+.blueHeart{font-size:90px; color:#35b6ff;}
+.pinkHeart{font-size:70px; color:#ff4aa5;}
+
+.glow{
+animation: glow 1.5s infinite;
+}
+@keyframes glow{
+0%{text-shadow:0 0 10px #ff0066;}
+100%{text-shadow:0 0 30px #ff6fb0;}
+}
+
+/* Photo album */
+.album img{
+width:90%;
+max-width:330px;
+border-radius:20px;
+margin:10px;
+box-shadow:0 0 20px pink;
+}
+
+/* Butterfly animation */
+.butterfly{
+position:absolute;
+font-size:30px;
+animation: fly 6s linear infinite;
+}
+@keyframes fly{
+0%{transform: translateY(100vh) translateX(-50px);}
+100%{transform: translateY(-100vh) translateX(50px);}
+}
+
+.loveMessage{
+font-size:22px;
+color:#ff9ad9;
+}
+
+/* Show first page initially */
+</style>
+</head>
+
+<body>
+
+<!---------------- PAGE 1 ---------------->
+<div class="page" id="p1" style="display:block;">
+<h1 class="glow">A Surprise For You ❤️</h1>
+<div class="redHeart" onclick="go(2)">❤️</div>
+<p>Click The Heart My Love</p>
+</div>
+
+<!---------------- PAGE 2 ---------------->
+<div class="page" id="p2">
+<h1 class="glow">Happy New Year My Wifeyy 💖</h1>
+<div class="pinkHeart">💗</div>
+<button onclick="go(3)">Click Me 💞</button>
+</div>
+
+<!---------------- PAGE 3 ---------------->
+<div class="page" id="p3">
+<h1 class="glow">Our Memories 💙</h1>
+<div class="blueHeart">💙</div>
+<button onclick="go(4)">Open Album</button>
+</div>
+
+<!---------------- PAGE 4 ---------------->
+<div class="page" id="p4">
+<h1 class="glow">Our Photo Album 🥰</h1>
+
+<div class="album">
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+<img src="photo5.jpg">
+<img src="photo6.jpg">
+<img src="photo7.jpg">
+<img src="photo8.jpg">
+<img src="photo9.jpg">
+<img src="photo10.jpg">
+<img src="photo11.jpg">
+<img src="photo12.jpg">
+<img src="photo13.jpg">
+<img src="photo14.jpg">
+<img src="photo15.jpg">
+<img src="photo16.jpg">
+<img src="photo17.jpg">
+<img src="photo18.jpg">
+<img src="photo19.jpg">
+<img src="photo20.jpg">
+</div>
+
+<button onclick="go(5)">Next ❤️</button>
+</div>
+
+<!---------------- PAGE 5 LAST ---------------->
+<div class="page" id="p5">
+<h1 class="glow">One Last Thing 💝</h1>
+<div class="pinkHeart" onclick="go(6)">❤️</div>
+<p>Click this heart</p>
+</div>
+
+<!---------------- FINAL LOVE MESSAGE ---------------->
+<div class="page" id="p6">
+<h1 class="glow">I Love You ❤️</h1>
+<p class="loveMessage">
+Nama life long ithu mari happya irukalam…  
+I will love you forever 💖
+</p>
+<p>— Your Wall-E 💞</p>
+</div>
+
+<script>
+function go(n){
+document.querySelectorAll(".page").forEach(p=>p.style.display="none");
+document.getElementById("p"+n).style.display="block";
+makeButterflies();
+}
+
+// Butterflies
+function makeButterflies(){
+for(let i=0;i<10;i++){
+let b=document.createElement("div");
+b.className="butterfly";
+b.style.left=Math.random()*100+"vw";
+b.style.animationDuration=(4+Math.random()*4)+"s";
+b.innerHTML="🦋";
+document.body.appendChild(b);
+setTimeout(()=>b.remove(),6000);
+}
+}
+</script>
+
+</body>
+  </html>
