@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<title>For Nickyyy ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Italianno&family=Handlee&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{overflow:hidden;font-family:'Handlee',cursive}
+
+section{
+  position:absolute;
+  width:100%;
+  height:100vh;
+  display:none;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  text-align:center;
+}
+
+.active{display:flex}
+
+/* Animations */
+@keyframes beat{50%{transform:scale(1.2)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes zoomFade{from{transform:scale(.7);opacity:0}to{opacity:1}}
+@keyframes moveLR{from{left:-100%}to{left:100%}}
+@keyframes rise{from{transform:translateY(100%)}to{transform:translateY(0)}}
+@keyframes fall{to{transform:translateY(100vh)}}
+
+/* PAGE 1 */
+#p1{background:white}
+#p1 .heart{
+  font-size:90px;
+  color:red;
+  animation:beat 1s infinite;
+  cursor:pointer;
+}
+
+/* PAGE 2 */
+#p2{background:#fff0f5}
+.cat{
+  font-size:70px;
+  animation:beat 1s infinite;
+  cursor:pointer;
+}
+
+/* PAGE 3 */
+#p3{background:#e3f2fd;overflow:hidden}
+.train{
+  position:absolute;
+  font-size:30px;
+  white-space:nowrap;
+  animation:moveLR 6s linear forwards;
+}
+.train span{font-weight:bold;margin-right:15px}
+
+/* PAGE 4 */
+#p4{background:#ffe6eb}
+.big-heart{font-size:120px;color:red}
+button{
+  padding:10px 25px;
+  margin:10px;
+  border:none;
+  border-radius:20px;
+  font-size:18px;
+  cursor:pointer;
+}
+#msg{margin-top:10px}
+
+/* PAGE 5 */
+#p5{background:#b00020;color:white}
+.black-heart{
+  position:absolute;
+  bottom:20px;
+  font-size:30px;
+  animation:beat 1s infinite;
+  cursor:pointer;
+}
+.heart-rain span{
+  position:absolute;
+  top:-20px;
+  animation:fall 5s linear infinite;
+}
+
+/* PAGE 6 */
+#p6{background:#0a0a23;color:white}
+.poem{
+  width:85%;
+  animation:rise 3s forwards;
+}
+.butterfly{
+  position:absolute;
+  font-size:20px;
+  animation:moveLR 10s linear infinite;
+}
+.letter{
+  position:absolute;
+  bottom:20px;
+  font-size:40px;
+  animation:beat 1s infinite;
+  cursor:pointer;
+}
+
+/* PAGE 7 */
+#p7{
+  background:#fdf5e6;
+  font-family:'Italianno',cursive;
+  overflow-y:auto;
+  padding:30px;
+  animation:zoomFade 2s;
+}
+.letter-text{
+  font-size:28px;
+  line-height:1.6;
+  color:#3b2f2f;
+  white-space:pre-line;
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<section id="p1" class="active">
+  <div class="heart" onclick="go(2)">❤</div>
+</section>
+
+<!-- PAGE 2 -->
+<section id="p2">
+  <h1>Hello Nickyyy</h1>
+  <div class="cat" onclick="go(3)">🐱👋</div>
+</section>
+
+<!-- PAGE 3 -->
+<section id="p3">
+  <div class="train">
+    <span>A surprise for you</span>
+    🚂🚋🚃🚋🚃🚋🚃
+  </div>
+</section>
+
+<!-- PAGE 4 -->
+<section id="p4">
+  <div class="big-heart">❤</div>
+  <h2>Will you be my Valentine?</h2>
+  <div>
+    <button onclick="yes()">YES</button>
+    <button id="noBtn" onclick="noClick()">NO</button>
+  </div>
+  <p id="msg"></p>
+</section>
+
+<!-- PAGE 5 -->
+<section id="p5">
+  <h1>Happy Valentine's Day ❤</h1>
+  <div class="heart-rain" id="rain"></div>
+  <div class="black-heart" onclick="go(6)">🖤</div>
+</section>
+
+<!-- PAGE 6 -->
+<section id="p6">
+  <div class="poem">
+சொர்க்கத்தின் துகள் ஒன்று  
+பூவாக பிறந்தது  
+வான்மேக துண்டுகளை  
+உடலாக கொண்டது..  
+
+பூ பூத்த இந்நாளில்  
+மழழை முகமும் பூங்கொத்தாய் மகிழ்ந்திடனும்..  
+
+துக்கத்தை சுமர்ந்து  
+தூக்கத்தை திருடும்  
+இறந்த காலத்தை மறந்திடு  
+
+வண்ணத்துப்பூச்சி போலே  
+வானம் எல்லாம் பறந்திடு..  
+
+புயல் ஓய்ந்த பின்பும்  
+புது வாழ்வு உண்டு  
+காலம் காயம் ஆற்றும்  
+கனவு நெஞ்சை தேற்றும்  
+
+கலங்காமல் கண்ணீரோடு சேர்த்து  
+கவலைகளையும் களைந்திடு..  
+
+பூ போலே நீ வாழு  
+புண்ணகையாய் பூத்திடு  
+
+முதல் பேச்சு, முதல் முத்தம்  
+முதலாக கேட்ட சத்தம்  
+நிகழ்வுகளை நினைவு கூர்ந்து  
+நினைவலைகளை அழகாக்கிடு...  
+
+Happy Valentine's Day ❤✨
+  </div>
+
+  <div class="letter" onclick="go(7)">💌</div>
+</section>
+
+<!-- PAGE 7 -->
+<section id="p7">
+<div class="letter-text">
+  
+
+
+Hii Nickyy yepdi irukaa nalla irukaiya nalla irukenu nampuren nalla padiya iruu.nama meet panni 4 years aachi but ipo thirumpi tha ellame kanavu maari iruku time ponadhe therila edho roller coaster la poitu vantha maro iruku Nama ona iruntha time illame magical moments But ippo nama apdi illa nama yepdi irukonu kooda sariya solla theriyala. Na ippo munna mari irukanumnu keka varala konjam manasu vitu pesanumnu nenaikuren
+Nama life neraiya ups and downs vanthuchii ellathaiyum thaandi vanthadhey periya visiyam
+Neraiya sirupu alugai kovam vekkam kadhal kamam ellame pathutom. Nama ona iruntha mari vera yaralaiyum happya iruka mudiyathu apdi irunthom
+Life la nadantha periya coincidence neetha stranger ah vanthu life eh change pannita. Nama nalla supportive va iruthom made for each other mari. Nenaikum podhey avlo alaga iruku ellame. Inime enoda life la ona mari oru person ah kandipa enala meet panna mudiyathu. 
+Na ona miss pannuren onoda kirukuthanam, ona setta, onkita pota kutty kutty sanda ellame miss pannuren. Ipo iruka nelamaikum naranam naatha. Neraiya thappu panniten. Ona rompave kasta paduthiten . Onala mannika mudiyathunu theriyum. But manasula edhum vachukathaa sariyaa. I hope na ona rompa happyavum vachu iruthenu nenaikuren enkooda ne rompa comfortable ah feel panni neraiya share panna. Nama ore life ah different body la vazhndha mari feel agudhu. 
+Nama neraiya kirukuthanam ellam pannom. Ipo nenachi patha siripa varudhu. Nama meet pannadhu ooru suthunadhu setta pannadhu ellame maraka mudiyatha moments. Next life laiyum na ona meet pannanumnu aasaiya iruku konjam cheekiramave meet pannanum. 
+Na ipo ithellam edhuku pesitu irukenu therila edho olaritu iruke kandukathaa. Nee ipo iruka mathiriye iruu nama nalla irukalam inum nama yepdi better ah irukalanu yosikalam. Onaku edhachum idea irutha or thonichina sollu naanum solluren. Ne nalla padichi doctor aana enaiya vida yaralaiyum atha pathu santhosa pada mudiyathuu. Naatha rompa rompa santhosapaduven. 
+Life la rompa alaga visiyam being loved by someone. Na chinna kolanthaiya irukum podhu nama parents nama mela vacha love latha nama happya iruthom. Athe maritha ovoru stage laiyum nadakum. Enaku nee antha maritha ne enaiya rompa nalla pathukita. Athey alavuku illenalum enala mudinja vara naanum ona happya vachi iruthen. Nadanthadhu nadanthadhuthaa nama atha change panna mudiyathu but future ah nama change panna mudiyum nama future ah nalla change pannalam onaku na yeppovumney supportive ah irupen enna nadanthalum sari pathukalam. Onaku niyapagam iruka ne athigama na onga amma mari behave pannurenu solluva because na ona kolantha mari pathen. Nama freeya irukalam awkward ah ellam ini pesa venam enna thonudho ellam pesalam. Time yarukagavum edhukagavum nikkathu vazhthudhaan aganum. Santhosama atha vazhalaam. Ithellam intha naal latha sollanumnu illa yeppo vena sollalam. But ithu konjam personal ah irunthuchii. Na ipo ona love pannurenu sollala love pannala neeyum enaiya love pannanumnu nenaikala. I just want to express my feelings for you. Onaku enna thonudho atha ne sollu
+Enaku thonuradha na solluren. Enaku ona pakka pudichi iruku rasipen sight adipenu sollalam. Ona care panna enaku pudichi iruku enaku edhukunu correct ah solla therila ona presence onoda character enaku set aachi
+Ona marupadiyum oru vaati meet pannanumnu nenaikuren nadakumanutha therila . Neraiya sollanum pola irukiii but vera ennadhu pesanumnu therila blank agiten. Simple ah sollanumna ne enaku special person nama ona irukanum nu nenaikuren ne nalla irukanumnu nenaikuren ne nalla irukatha pakkanumnu nenaikuren... 
+
+Last ah onu sollanum
+Thanks for coming to my life. 
+You make my life better... ❤
+
+
+</div>
+</section>
+
+<script>
+function go(n){
+  document.querySelectorAll("section").forEach(s=>s.classList.remove("active"))
+  document.getElementById("p"+n).classList.add("active")
+  if(n===3)setTimeout(()=>go(4),6000)
+  if(n===5)rain()
+}
+
+let c=0
+function noClick(){
+  c++
+  const m=document.getElementById("msg")
+  const b=document.getElementById("noBtn")
+  if(c===1)m.innerText="Try again 😅"
+  else if(c===2)m.innerText="Nalla yosi 🤔"
+  else if(c===3)m.innerText="Mooditu YES press pannu 😤"
+  else b.style.display="none"
+}
+
+function yes(){
+  document.getElementById("msg").innerText="Good choice 😁"
+  setTimeout(()=>go(5),1000)
+}
+
+function rain(){
+  const r=document.getElementById("rain")
+  for(let i=0;i<30;i++){
+    let s=document.createElement("span")
+    s.innerText="❤"
+    s.style.left=Math.random()*100+"%"
+    s.style.animationDuration=3+Math.random()*3+"s"
+    r.appendChild(s)
+  }
+}
+</script>
+
+</body>
+  </html>
+
